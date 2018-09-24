@@ -1,0 +1,685 @@
+/*
+Template Name: Selise App Landing Page
+*/
+
+/*============================
+Indexing
+1. Google Font
+2. Base CSS
+3. Hero Section CSS
+4. Feature & Video Section CSS
+5. Download Section CSS
+6. Feature 2 Section CSS
+7. About Section CSS
+8. Testimonial Section CSS
+9. Pricing Section CSS
+10. FAQ Section CSS
+11. Contact Section CSS
+12. Footer Section CSS
+13. Owl Carousel CSS
+=============================*/
+
+/*============================
+1. Google Font
+============================*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
+
+/* ===========================
+2. Base CSS
+=========================== */
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:focus, input:focus, textarea:focus, button:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 500;
+    line-height: 2em;
+}
+
+a:hover { text-decoration: none }
+ul{margin: 0; padding: 0; list-style: none}
+
+body, p{
+    font-family: IRANSans, serif;
+    font-size: 13px;
+    line-height: 29px;
+    color: #696969;
+    font-weight: 300;
+}
+img{
+  max-width: 100%;
+}
+
+h1{
+  font-size: 36px;
+  color: #696969;
+  line-height:50px;
+}
+
+.section-padding{
+  padding:150px 0;
+}
+
+.section-grey{
+  background-color: #f6f7fa;
+}
+
+.section-title h2{
+	font-size:34px;
+	line-height:45px;
+}
+
+.section-title.title-white h2 {
+  color: #fff;
+}
+
+.section-title {
+  margin-bottom: 100px;
+}
+
+i.icon-orange-gradient{
+  background-image: #f7b733;
+  background-image: -moz-linear-gradient(top, #f7b733 0%, #fc4a1a 100%);
+  background-image: -webkit-linear-gradient(top, #f7b733 0%,#fc4a1a 100%);
+  background-image: linear-gradient(to bottom, #f7b733 0%,#fc4a1a 100%);
+  color: transparent;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7b733', endColorstr='#fc4a1a',GradientType=0 );
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+i.icon-blue-gradient{
+  background-image: #56ccf2;
+  background-image: -moz-linear-gradient(top, #56ccf2 0%, #2f80ed 100%);
+  background-image: -webkit-linear-gradient(top, #56ccf2 0%,#2f80ed 100%);
+  background-image: linear-gradient(to bottom, #56ccf2 0%,#2f80ed 100%);
+  color: transparent;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#56ccf2', endColorstr='#2f80ed',GradientType=0 );
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+i.icon-red-gradient{
+  background-image: #f80759;
+  background-image: -moz-linear-gradient(top, #f80759 0%, #bc4e9c 100%);
+  background-image: -webkit-linear-gradient(top, #f80759 0%,#bc4e9c 100%);
+  background-image: linear-gradient(to bottom, #f80759 0%,#bc4e9c 100%);
+  color: transparent;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f80759', endColorstr='#bc4e9c',GradientType=0 );
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+i.icon-green-gradient{
+  background-image: #38ef7d;
+  background-image: -moz-linear-gradient(top, #38ef7d 0%, #11998e 100%);
+  background-image: -webkit-linear-gradient(top, #38ef7d 0%,#11998e 100%);
+  background-image: linear-gradient(to bottom, #38ef7d 0%,#11998e 100%);
+  color: transparent;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#38ef7d', endColorstr='#11998e',GradientType=0 );
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.margin-top-80{
+  margin-top: 80px;
+}
+.margin-top-215{
+  margin-top: 215px;
+}
+.padding-top-180{
+  padding-top: 180px;
+}
+
+.site-default-btn {
+  background: #fff;
+  border-radius: 500px;
+  display: inline-block;
+  color: #666666;
+  text-transform: uppercase;
+  font-size: 13px;
+  padding: 16px 22px;
+  letter-spacing: 1px;
+  border: 0px;
+  font-weight: 400;
+  margin-bottom: 14px;
+}
+
+.site-default-btn:hover{
+    color: #666666;
+}
+.btn-red-gradient{
+    background: #fc4a1a; /* Old browsers */
+    background: -moz-linear-gradient(left, #fc4a1a 0%, #f7b733 99%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #fc4a1a 0%,#f7b733 99%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #fc4a1a 0%,#f7b733 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fc4a1a', endColorstr='#f7b733',GradientType=1 ); 
+    color: #fff;
+    margin-right: 10px;
+}
+
+.btn-red-gradient:hover{
+    color: #fff;
+}
+
+/*============================
+3. Hero Section CSS
+============================*/
+.hero-area {
+  height: 905px;
+  padding-top: 80px;
+}
+
+.site-section-bg{
+  background:url("../img/hero-bg.jpg");
+  background-color: #7344bf;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.hero-text h1{
+    font-weight: 300;
+    color: #ffffff;
+    line-height: 55px;
+    text-transform: uppercase;
+}
+
+.hero-text h1 strong{
+    font-weight: 700;
+}
+
+.hero-text span{
+    display: inline-block;
+    margin-bottom: 25px;
+}
+
+.header-area .navbar-brand{
+  padding: 0;
+  height: auto;
+}
+.header-area .navbar {
+  padding: 14px 0;
+}
+
+.header-area .navbar {
+  padding: 14px 0;
+  background: transparent;
+  border-bottom: 0px;
+  transition:0.5s;
+}
+.header-area {
+  /* float :right; */
+}
+ .navbar-collapse {
+  float: left;
+}
+.navbar-header{
+  float:right
+}
+.main-menu ul.nav li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 400;
+  padding: 15px 15px 15px;
+}
+
+.main-menu ul.nav li a:hover{
+  color: #fff;
+  transition:0.5s;
+}
+
+.main-menu ul.nav li a:focus{
+  color: #fff;
+}
+
+.header-area .top-navigation-animate {
+  background: #00306b;
+  transition:0.5s;
+}
+
+.header-area .navbar-brand {
+  margin-left: 0 !important;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+
+/*============================
+4. Feature & Video Section CSS
+============================*/
+.video-bg{
+  height: 300px;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  background:url("../img/video-bg.jpg");
+  background-color: #6f44c7;
+  border-radius: 3px;
+  position: relative;
+  z-index: 1;
+}
+
+.video-bg:before{
+  background: #00306b;
+  background: -webkit-linear-gradient(left, #000428 0%, #00306b 100%);
+  background: -o-linear-gradient(left, #000428 0%, #00306b 100%);
+  background: linear-gradient(to right, #000428 0%, #00306b 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000428', endColorstr='#00306b',GradientType=1); 
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  opacity: 0.9;
+  content:"";
+  z-index: -1;
+}
+.video-btn {
+  text-align: center;
+  line-height: 300px;
+}
+.feature-icon i {
+  font-size: 24px;
+}
+
+.feature-icon{
+  margin-bottom:10px;
+}
+
+.single-feature {
+  margin-bottom: 40px;
+}
+
+.single-feature h5, .single-feature-two h5 {
+  font-weight: 500;
+}
+single-feature-two  h4 {
+
+  line-height:2em;
+}
+
+
+/*============================
+5. Download Section CSS
+============================*/
+.download-text {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.download-text h2 {
+	font-size:34px;
+	color: #fff;
+	line-height:45px;
+}
+.download-app-btn {
+  text-align: center;
+}
+.download-app-btn ul li {
+  display: inline-block;
+  padding: 0 10px;
+  margin-bottom: 15px;
+}
+
+/*============================
+6. Feature 2 Section CSS
+============================*/
+.single-feature-two {
+  /* margin-bottom: 20px; */
+}
+
+.single-feature-two{
+  padding: 15px 25px;
+}
+
+.single-feature-two:hover {
+  background: #f6f7fa;
+  padding: 15px 25px;
+  border-radius: 3px;
+  box-shadow: 0px 1px 3px #ddd;
+  transition:0.5s;
+  cursor:pointer;
+}
+
+.single-feature-two .feature-icon {
+  float: left;
+  width: 32px;
+}
+.feature-two-text {
+  margin-left: 45px;
+}
+.feature-two-text p {
+  margin: 0;
+}
+
+
+/*============================
+7. About Section CSS
+============================*/
+.about-text h2{
+	line-height:45px;
+	font-size:34px;
+}
+
+/*============================
+8. Testimonial Section CSS
+============================*/
+.client-image img {
+  height: 103px;
+  width: 103px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+.client-image {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.testimonial-text {
+  color: #fff;
+  text-align: center;
+  padding: 27px;
+  border: 2px solid #fff;
+  border-radius: 3px;
+  margin-bottom: 35px;
+  position: relative;
+  font-size: 15px;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 32px;
+  z-index:1;
+}
+.testimonial-text p {
+  color: #fff;
+}
+.testimonial-text::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #fff;
+  content: "";
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
+  z-index:-1;
+}
+.testimonial-info {
+  text-align: center;
+  color: #fff;
+}
+
+.testimonial-info span {
+  font-style: italic;
+}
+.testimonial-info h5 {
+  margin-bottom: 0;
+  line-height: 26px;
+  font-weight: 500;
+ 
+}
+.single-testimonial-box {
+  width: 60%;
+  margin: 0 auto;
+}
+.selise-testimonial .owl-nav div {
+  position: absolute;
+  z-index: 1;
+  height: 40px;
+  width: 40px;
+  color: #000;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 18px;
+  color: #fff;
+  left: 50px;
+  top: 50%;
+  border: 2px solid #fff;
+}
+.selise-testimonial .owl-nav div:after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.3;
+  z-index: -1;
+}
+.selise-testimonial .owl-nav div.owl-next {
+  left: auto;
+  right: 50px;
+}
+
+/*============================
+9. Pricing Section CSS
+============================*/
+.single-pricing-table {
+  text-align: center;
+  box-shadow: 0px 0px 6px 2px #f4f4f4;
+}
+
+.pricing-heading {
+  background: #f6f7fa;
+  padding: 40px 0;
+  margin-bottom: 30px;
+}
+.pricing-heading i {
+  font-size: 45px;
+  margin-bottom: 15px;
+}
+.pricing-heading h3 {
+  font-weight: 300;
+  text-transform:uppercase;
+  letter-spacing:6px;
+}
+.pricing-features ul li {
+  line-height: 45px;
+}
+.big-text {
+  font-size: 70px;
+  color: #00306b;
+}
+.small-text {
+  font-size: 22px;
+  margin-left: 8px;
+}
+
+.price {
+  margin: 35px 0px;
+}
+
+.buy-now-btn{
+  margin-bottom:30px;
+}
+
+.buy-now-btn {
+  padding-bottom: 50px;
+}
+
+.btn-pricing {
+  border: 1px solid #00306b;
+  color: #00306b;
+  padding: 15px 40px;
+}
+
+.btn-pricing:hover{
+  background:#00306b;
+  color:#fff;
+  transition:0.5s;
+}
+
+.single-pricing-table.popular .pricing-heading {
+  background: #00306b;
+  background: -webkit-linear-gradient(left, #000428 0%, #00306b 100%);
+  background: -o-linear-gradient(left, #000428 0%, #00306b 100%);
+  background: linear-gradient(to right, #000428 0%, #00306b 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000428', endColorstr='#00306b',GradientType=1);
+  color: #fff;
+}
+
+.single-pricing-table.popular .pricing-heading i{
+  color: #fff;
+}
+.single-pricing-table.popular .btn-pricing{
+  border: 0px solid transparent;
+  color: #fff;
+  background: #00306b;
+  background: -webkit-linear-gradient(left, #000428 0%, #00306b 100%);
+  background: -o-linear-gradient(left, #000428 0%, #00306b 100%);
+  background: linear-gradient(to right, #000428 0%, #00306b 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000428', endColorstr='#00306b',GradientType=1);
+}
+
+
+/*============================
+10. FAQ Section CSS
+============================*/
+
+.panel-group.selise-faq .panel {
+  background: #fff;
+  border: 0px;
+  margin-bottom: 40px;
+  border-radius: 3px;
+  -webkit-box-shadow: -1px 3px 7px -1px rgba(235,235,235,1);
+  -moz-box-shadow: -1px 3px 7px -1px rgba(235,235,235,1);
+  box-shadow: -1px 3px 7px -1px rgba(235,235,235,1);
+}
+.panel-group.selise-faq .panel .panel-heading {
+  background: #fff;
+  border-bottom: 0px;
+  padding: 13px 25px;
+  border-top-left-radius:3px;
+  border-top-right-radius:3px;
+}
+.panel-group.selise-faq .panel .panel-heading a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 400;
+  color: #00306b;
+  position: relative;
+}
+.panel-group.selise-faq .panel-body {
+  border-top: 0px !important;
+  padding: 0px 25px 13px 25px;
+}
+
+.panel-group.selise-faq .panel-heading a::after {
+  content: "\f196";
+  font-size: 20px;
+  color: #d5d5d5;
+  font-family: FontAwesome;
+  float: right;
+}
+
+.panel-group.selise-faq .panel-heading a[aria-expanded="true"]:after{
+  content: "\f147" !important;
+}
+
+/*============================
+11. Contact Section CSS
+============================*/
+.contact-form {
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: 0px 6px 15px -3px #00306b;
+  padding: 50px;
+  text-align:center;
+}
+.contact-form input[type=text], input[type=email], input[type=phone], input[type=tel], textarea{
+  width: 100%;
+  margin-bottom: 20px;
+  background: #f6f7fa;
+  border: 1px solid #dedede;
+  padding: 14px;
+  color: #a9a9a9;
+  font-size: 15px;
+}
+
+.contact-form button[type=submit], .contact-form input[type=submit]{
+  color: #fff;
+  background: #00306b;
+  background: -webkit-linear-gradient(left, #000428 0%, #00306b 100%);
+  background: -o-linear-gradient(left, #000428 0%, #00306b 100%);
+  background: linear-gradient(to right, #000428 0%, #00306b 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000428', endColorstr='#00306b',GradientType=1);
+}
+
+
+/*============================
+12. Footer Section CSS
+============================*/
+.footer-padding{
+  padding:80px 0;
+}
+
+.footer-logo {
+  margin-bottom: 25px;
+}
+
+.social-links {
+  text-align: center;
+  margin: 40px 0px 10px 0px;
+}
+.social-links ul li {
+  display: inline-block;
+  padding: 0px 11px;
+}
+.social-links ul li a i {
+  color: #c8c8c8;
+  font-size: 26px;
+}
+.copyright {
+  text-align: center;
+}
+.copyright p strong{
+  color: #00306b;
+}
+.footer-widget ul li {
+  text-align: right;
+  line-height: 30px;
+}
+.footer-widget ul li a {
+  color: #696969;
+}
+
+.footer-widget ul li a:hover, .social-links ul li a i:hover{
+  color:#00306b;;
+  transition:0.5s;
+}
+.rtl{
+  direction:rtl;
+}
+
+/*============================
+13. Owl Carousel CSS
+============================*/
+.owl-carousel .owl-item img{
+  width: auto;
+  margin: 0 auto;
+}
