@@ -77,7 +77,7 @@ h1{
 }
 
 .section-padding{
-  padding:150px 0;
+  padding:50px 0;
 }
 
 .section-grey{
@@ -94,7 +94,7 @@ h1{
 }
 
 .section-title {
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 i.icon-orange-gradient{
@@ -153,15 +153,14 @@ i.icon-green-gradient{
 
 .site-default-btn {
   background: #fff;
-  border-radius: 500px;
+  border-radius: 9px;
   display: inline-block;
   color: #666666;
   text-transform: uppercase;
-  font-size: 13px;
-  padding: 16px 22px;
-  letter-spacing: 1px;
-  border: 0px;
-  font-weight: 400;
+  font-size: 16px;
+  padding: 11px 22px;
+   border: 0px;
+  font-weight: 500;
   margin-bottom: 14px;
 }
 
@@ -240,7 +239,7 @@ i.icon-green-gradient{
 .main-menu ul.nav li a {
   color: #fff;
   text-decoration: none;
-  font-size: 13px;
+  font-size: 20px;
   text-transform: uppercase;
   font-weight: 400;
   padding: 15px 15px 15px;
@@ -682,4 +681,28 @@ single-feature-two  h4 {
 .owl-carousel .owl-item img{
   width: auto;
   margin: 0 auto;
+}
+.list_style{
+
+  line-height: 3em;
+  font-weight: 500;
+  font-size: 17px;
+      margin-top: 57px;
+}
+.btn_back{
+  background: #fff;
+    border-radius: 8px;
+    display: inline-block;
+    color: #666666;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 4px 14px;
+    border: 0px;
+    font-weight: 500;
+    margin-bottom: 7px;
+}
+.about_icon{
+  font-size: 127px;
+  padding: 26px;
+  color: #16b2bb;
 }
